@@ -1,7 +1,143 @@
-
+*{
+    box-sizing: border-box;
+}
 
 div{
     border: 1px solid black;
     padding: 5px;
 }
 
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.heading{
+    display: none;
+}
+
+.content{
+    display: none;
+}
+
+.main{
+    display: none;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+@media(min-width: 600px) and (min-width: 900px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left-side{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: space-evenly;
+    }
+    
+    .right-side{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: space-evenly;
+    }
+    
+    .content{
+        display: unset;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .side{
+        display: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 30%;
+    }
+
+    .main{
+        display: unset;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+
+@media(min-width: 991px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left-side{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: space-evenly;
+    }
+    
+    .right-side{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: space-evenly;
+    }
+    .heading{
+        display: unset;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .content{
+        display: unset;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .side{
+        display: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 30%;
+    }
+
+    .main{
+        display: unset;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+} 
